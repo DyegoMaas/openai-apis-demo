@@ -2,7 +2,9 @@
 
 ## Transcript de uma conversa
 
-Conversa completa:
+Essa conversa foi gerada totalmente pelo assistente conversando consigo mesmo, embora ele ache que está conversando com um humano.
+
+**Conversa completa:**
 
 (system) O tema de hoje é "O que é necessário para ser um escritor". Converse sobre o tema, sempre adicionando uma pergunta depois de responder educadamente. Discorde ocasionalmente. Restrinja a resposta completa a 150 caracteres.
 
