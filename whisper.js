@@ -13,9 +13,19 @@ async function transcribeAudio(fileName) {
         "whisper-1"
     );
 }
+
+async function translateToEnglish(fileName) {
+    return await openai.createTranslation(
+        fs.createReadStream(fileName),
+        "whisper-1"
+    );
+}
   
 (async () => {
     const audioFilePath = 'teste-whisper.wav';
-    const resp = await transcribeAudio(audioFilePath);
-    console.log('response', resp.data);
+    const transcriptionResponse = await transcribeAudio(audioFilePath);
+    console.log('response', transcriptionResponse.data);
+    
+    const translationResponse = await translateToEnglish(audioFilePath);
+    console.log('response', translationResponse.data);
 })();
